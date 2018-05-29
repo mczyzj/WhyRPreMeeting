@@ -1,0 +1,47 @@
+---
+title: "Automatyzacja pracy w R"
+author: "Michal J. Czyz"
+date: "May 29, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(cache=TRUE)
+```
+
+# Ocena ryzyka {.build}
+
+RISK = PROBABILITY OF EVENT X SEVERITY OF EVENT
+
+## Ocena zagrożeń związanych z żywnością
+
+- chemiczne,
+- mikrobiologiczne,
+- GMO,
+- środowisko,
+- zdrowie roślin/zwierząt,
+- nowe produkty żywnościowe,
+- etc.
+
+## Analiza ryzyka
+
+- Ocena ryzyka
+- Zarządzanie ryzykiem
+- Komunikacja ryzyka
+
+
+## Ocena zagrożenia agrofagiem
+
+<div class="columns-2">
+>- I Kategorizacja szkodnika
+>- II Prawdopodobieństwo zasiedlenia i rozprzestrzenienia
+>- III Wpływ
+>- IV Ogólna ocena zagrożenia
+>- V Ocena niepewności
+
+- I Identyfikacja zagrożenia
+- II Charakterystyka zagrożenia 
+- III Ocena ekspozycji
+- IV Charakterystyka ryzyka
+</div>
