@@ -1,47 +1,93 @@
 ---
 title: "Automatyzacja pracy w R"
 author: "Michal J. Czyz"
-date: "May 29, 2018"
+date: "Jun 7, 2018"
 output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-knitr::opts_chunk$set(cache=TRUE)
+knitr::opts_chunk$set(cache = TRUE)
 ```
 
 # Ocena ryzyka {.build}
 
 RISK = PROBABILITY OF EVENT X SEVERITY OF EVENT
 
-## Ocena zagrożeń związanych z żywnością
+----
 
-- chemiczne,
-- mikrobiologiczne,
-- GMO,
-- środowisko,
-- zdrowie roślin/zwierząt,
-- nowe produkty żywnościowe,
-- etc.
+```{r out.width=c('340px', '405px'), out.height=c('300px', '300px'), fig.show='hold'}
+knitr::include_graphics('images/cbokiigz.jpg')
 
-## Analiza ryzyka
+
+knitr::include_graphics('images/berlin.jpg')
+```
+  
+<div class="columns-2">
+Instytut Ochrony Roślin Poznań
+
+Instytut Oceny Ryzyka Berlin
+</div>
+
+## Analiza ryzyka {.flexbox .vcenter}
 
 - Ocena ryzyka
 - Zarządzanie ryzykiem
 - Komunikacja ryzyka
 
+## Ocena zagrożeń związanych z żywnością {.flexbox .vcenter}
 
-## Ocena zagrożenia agrofagiem
+- chemiczne,
+- mikrobiologiczne,
+- GMO,
+- zdrowie roślin/zwierząt,
+- nowe produkty żywnościowe
 
-<div class="columns-2">
->- I Kategorizacja szkodnika
->- II Prawdopodobieństwo zasiedlenia i rozprzestrzenienia
->- III Wpływ
->- IV Ogólna ocena zagrożenia
->- V Ocena niepewności
+## Ocena ryzyka w żywnośći -- framework {.flexbox .vcenter}
 
 - I Identyfikacja zagrożenia
 - II Charakterystyka zagrożenia 
 - III Ocena ekspozycji
 - IV Charakterystyka ryzyka
-</div>
+
+## PRA -- framework {.flexbox .vcenter}
+
+- I Kategorizacja szkodnika
+- II Prawdopodobieństwo zasiedlenia  
+i rozprzestrzenienia
+- III Wpływ
+- IV Ogólna ocena zagrożenia
+- V Ocena niepewności
+
+## Czy rzeczywiście szkody są poważne? {.flexbox .vcenter}
+
+[Anoplophora chinensi](https://gd.eppo.int/taxon/ANOLCN/photos)  
+[Bursaphelenchus xylophilus AKA pine nematode](https://gd.eppo.int/taxon/BURSXY/photos)
+
+## Inne elementy pracy {.flexbox .vcenter}
+
+- Raporty eksportowe
+- Propozycje oceny dla MRiRW/PIORiN
+
+# Gdzie jest miejsce dla R w tym wszystkim?
+
+## Problem {.flexbox .vcenter}
+
+Jak stworzyć tablę dla kilkudziesięciu/kilkuset szkodników...  
+i nie umrzeć z nudów?
+
+## Bazy danych EPPO {.flexbox .vcenter}
+
+- [EPPO Database](https://gd.eppo.int/taxon/XYLEFA)
+- [EPPO Data services](https://data.eppo.int/)
+
+## Kodowanie {.flexbox .vcenter}
+
+Od tragicznego kodu na [Blog](https://yetanotherrblog.netlify.com)  
+do sprawnej [Paczki na githubie](https://github.com/mczyzj/pestr)
+
+## Korzyści {.flexbox .vcenter}
+
+- Nowe doświadczenia i umiejętności
+- Żmudne zadania realizuje maszyna
+- Dobra zabawa
